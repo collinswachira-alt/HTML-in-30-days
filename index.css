@@ -1,7 +1,31 @@
+body{
+    background-image:url(./assets/mychess.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1{
     color: gold;
     text-align: center;
     margin: auto;
     border: 2px solid yellow;
-    
+}
+a:link{
+    color: red;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: brown;
+}
+button:hover{
+    color: red;
+}
+button{
+    color: blue;
+}
+pre{
+   /* background-image: url(./assets/mychess.webp);
+   background-repeat: repeat; */
+    color: blue;
 }
