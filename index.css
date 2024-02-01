@@ -1,5 +1,5 @@
 body{
-    background-image:url(./assets/mychess.webp) ;
+    background-image:url(./assets/dec.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -25,7 +25,11 @@ button{
     color: blue;
 }
 pre{
-   /* background-image: url(./assets/mychess.webp);
-   background-repeat: repeat; */
+   background-image: url(./assets/mychess.webp);
+   background-repeat: repeat;
+    color: blue;
+    font-size: medium;
+}
+address{
     color: blue;
 }
