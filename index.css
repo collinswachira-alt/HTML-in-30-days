@@ -35,7 +35,7 @@ address{
 }
 table{
     /* width: 100%; */
-    
+    height: auto;
 }
 th ,td{
     /* background-color: #96D4D4; */
