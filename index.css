@@ -33,3 +33,36 @@ pre{
 address{
     color: blue;
 }
+table{
+    /* width: 100%; */
+    
+}
+th ,td{
+    /* background-color: #96D4D4; */
+    border-radius: 10px;
+    /* width: 100%; */
+    border-style: double;
+}
+th{
+    color: brown;
+    /* width: 25%; */
+    text-align: left;
+}
+tr{
+    height: 60;
+    border-bottom: 1px solid red;
+}
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4)
+}
+th:nth-child(even) , td:nth-child(even){
+    background-color: rgba(150, 212, 212, 0.4)
+}
+caption{
+    color: brown;
+    text-decoration: underline;
+    font-weight: bold;
+}
+tr :hover{
+    background-color: rgba(21, 43, 23, 9.3);
+}

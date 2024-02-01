@@ -30,7 +30,12 @@
     <a href="https://lichess.org/@/Collins_wachira" title="Play with me😎" target="_blank">
         <img src="./assets/mychess.webp" alt="mychess" width="20" height="20">
     </a>
-    <a href="https://lichess.org/@/Collins_wachira" title="New Opponent!" target="_blank">Find New Opponent.</a>
+    <a href="https://lichess.org/@/Collins_wachira" title="New Opponent!" target="_blank" onclick="that()">Find New Opponent.</a>
+    <script>
+        function that(){
+            alert ("Proceed!");
+        }
+    </script>
     <address>
         Collins Wachira, <br>
         +254 115 661 943, <br>
@@ -44,15 +49,102 @@
     <!-- RE-fomart -->
     <img src="./assets/mychess.webp" alt="mychess" usemap="#useme" width="200" height="200"><br>
     <map name="useme">
-        <area shape="circle" coords="100,100,75" href="https://lichess.org/@/Collins_wachira" alt="trial"
+        <area shape="circle" coords="100,100,75" href="https://lichess.org/@/Collins_wachira" alt="trial" target="_blank"
         onclick="myFunction()">
+
+        <script>
+            function myFunction(){
+                alert("Back!");
+            }
+        </script>
     </map>
+    <table>
+        <tr style="height: 40px;">
+            <th style="width: 40%;" >Player's ID</th>
+            <th>Rating</th>
+            <th>Available?</th>
+            <th>Variation</th>
+        </tr>
+        <tr>
+            <td>Jeff</td>
+            <td>1500</td>
+            <td>No</td>
+            <td>Casual</td>
+        </tr>
+        <tr>
+            <td>Simon</td>
+            <td>1991</td>
+            <td>Yes</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Teddy</td>
+            <td>3700</td>
+            <td>No</td>
+            <td>Rated</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- <table>
+    <caption>Students Info.</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>School</th>
+            <th>Class</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jeff</td>
+            <td>Collins</td>
+            <td>T.T.U</td>
+            <td>S&I</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Jeff</td>
+            <td>Collins</td>
+            <td>T.T.U</td>
+            <td>S&I</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Jeff</td>
+            <td>Collins</td>
+            <td>T.T.U</td>
+            <td>S&I</td>
+            <td>19</td>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Jeff</td>
+            <td>Simon</td>
+            <td>Teddy</td>
+        </tr>
+        <tr>
+            <th rowspan="3">Phone</th>
+            <td>97748494948</td>
+            <td>74849783939</td>
+            <td>74849487478</td>
+        </tr>
+        <tr>
+            <td>74849447494</td>
+            <td>47489494749</td>
+            <td>47484948474</td>
+        </tr>
+        <tr>
+            <td>74644774847</td>
+            <td>74846484747</td>
+            <td>74748474484</td>
+        </tr>
+    </table> -->
+    <button onclick="get()"><a href="#top">Scroll Up!</a></button>
 
     <script>
-        function myFunction(){
-            alert ("Proceed to Lichess!");
+        function get(){
+            alert ("Top?");
         }
     </script>
-    <button><a href="#top">Scroll Up!</a></button>
 </body>
 </html>
