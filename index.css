@@ -41,6 +41,8 @@ address{
 table{
     /* width: 100%; */
     height: auto;
+    background-color: yellowgreen;
+    border-radius: 12px;
 }
 th ,td{
     /* background-color: #96D4D4; */
@@ -80,15 +82,18 @@ ul{
     border-radius: 12px;
 }
 li{
-    float: left;
+    float:center ;
 }
 li a{
     color: #ffff;
-    display: block;
+    display: list-item;
     text-decoration: none;
     padding: 16px;
     text-align: center;
 }
 li a:hover{
     background-color: black;
+}
+p{
+    text-align: center;
 }
