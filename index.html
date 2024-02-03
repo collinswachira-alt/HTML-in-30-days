@@ -8,11 +8,11 @@
 </head>
 <link rel="stylesheet" href="index.css">
 <body style="background-color: green ;">
-    <div>
+    <div style="background-image: url(./assets/myCollection.jpeg);">
         <h1 id="#top">
          FASHION HUB
         </h1>
-        <p>By <a href="#bottom">jeftey_edits</a></p>
+        <p>By <a href="#bottom">jeftey edits</a></p>
     </div>
     <hr>
     <p style="color:brown;">Instant Shopping $ Shipping.</p>
@@ -33,25 +33,27 @@
     </script>
 
     <!-- RE-fomart -->
-<div class="My container">
-    <img id="#jacket" src="./assets/myJacket.webp" alt="mychess" usemap="#useme" width="200" height="200" ><br>
-</div>
-<div>
-    <img src="./assets/myCloth.webp" alt="mychess" usemap="#useme" width="200" height="200"><br>
-</div>
-<div>
-    <img src="./assets/myDress.webp" alt="mychess" usemap="#useme" width="200" height="200"><br>
-</div>
+    <div class="mycontainer">
+         <div>
+         <img src="./assets/myJacket.webp" alt="mychess" usemap="#useme" width="200" height="200" id="#meet" >
+         </div>
+         <div>
+         <img src="./assets/myCloth.webp" alt="mychess" usemap="#useme" width="200" height="200">
+         </div>
+         <div>
+         <img src="./assets/myDress.webp" alt="mychess" usemap="#useme" width="200" height="200">
+         </div>
+    </div>
     <map name="useme">
         <area shape="circle" coords="100,100,75" href="https://lichess.org/@/Collins_wachira" alt="trial" target="_blank"
         onclick="myFunction()">
-
         <script>
             function myFunction(){
                 alert("Back!");
             }
         </script>
     </map>
+    <br>
     <table>
         <tr style="height: 40px;">
             <th style="width: 40%;" >Item</th>
@@ -61,7 +63,7 @@
             <th>Total</th>
         </tr>
         <tr>
-            <td><a href="#jacket">Jackets</a></td>
+            <td><a href="#top">Jackets</a></td>
             <td>$1500</td>
             <td>$350</td>
             <td>$300</td>
@@ -90,10 +92,9 @@
         </tr>
     </table>
     <hr>
-<footer>
-    <div>
-    <ul onclick="get()" id="#bottom">
-        <li>About Us.</li><br>
+    <div id="#bottom">
+    <ul onclick="that()">
+        <h4 id="#bottom">About Us!</h4>
         <li><a href="//www.instagram.com/jeftey_edits/" target="_blank">Instagram</a></li>
         <li><a href="//www.facebook.com/joenfu.collins" target="_blank">Facebook</a></li>
         <li><a href="//github.com/collinswachira-alt" target="_blank">Github</a></li>
@@ -103,12 +104,6 @@
         <li><a href=#top>Back.</a></li>
     </ul>
     </div>
-</footer>
-    <script>
-        function get(){
-            alert ("Proceed!")
-        }
-    </script>
 </body>
 </html>
 <!DOCTYPE html>

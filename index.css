@@ -9,7 +9,6 @@ div{
     margin: auto;
     border: 2px solid black;
     border-radius: 9px;
-    background-image: url(./assets/myCollection.jpeg);
     background-repeat: repeat;
 }
 a{
@@ -96,4 +95,23 @@ li a:hover{
 }
 p{
     text-align: center;
+}
+li a:active{
+    color: goldenrod;
+}
+img{
+    border-radius: 9px;
+}
+div.mycontainer{
+    /* background-color: inherit; */
+    /* float: left; */
+    overflow: visible;
+    display: inline-block;
+    width: 43%;
+    display: flex;
+    margin: auto;
+}
+h4{
+    text-align: center;
+    color: gold;
 }
