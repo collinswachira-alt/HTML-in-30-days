@@ -95,6 +95,7 @@ li a:hover{
 }
 p{
     text-align: center;
+    color: brown;
 }
 li a:active{
     color: goldenrod;
@@ -102,16 +103,35 @@ li a:active{
 img{
     border-radius: 9px;
 }
-div.mycontainer{
-    /* background-color: inherit; */
-    /* float: left; */
-    overflow: visible;
-    display: inline-block;
-    width: 43%;
-    display: flex;
-    margin: auto;
-}
 h4{
     text-align: center;
     color: gold;
+}
+.clothes{
+    display: flex;
+    overflow: scroll;
+    width: 40%;
+    /* align-content: center; */
+}
+.black{
+    color: goldenrod;
+}
+/* .details{
+    background-attachment: inherit;
+    border-radius: 9px;
+    text-align: left;
+    text-decoration: none;
+    background-color: none;
+    background-image: none;
+} */
+details{
+    float: left;
+    display: flex;
+    border-radius: 13px;
+    background-color: brown;
+    /* width: 10px; */
+}
+table{
+    text-align: center;
+    align-self: center;
 }

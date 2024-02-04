@@ -15,7 +15,13 @@
         <p>By <a href="#bottom">jeftey edits</a></p>
     </div>
     <hr>
-    <p style="color:brown;">Instant Shopping $ Shipping.</p>
+    <p id="#flex">Instant Shopping $ Shipping.</p>
+    <button onclick="displayResult()">Change me!</button>
+    <script>
+        function displayResult(){
+            getElementbyid("flex").inner
+        }
+    </script>
     <pre>
         Chess is a two-player board game played on a checkered board with 64 squares arranged 
         in eight vertical rows called <mark>files</mark> and eight horizontal rows called <mark>ranks</mark>.
@@ -33,15 +39,30 @@
     </script>
 
     <!-- RE-fomart -->
-    <div class="mycontainer">
+    <div class="clothes">
          <div>
-         <img src="./assets/myJacket.webp" alt="mychess" usemap="#useme" width="200" height="200" id="#meet" >
+            <img src="./assets/myJacket.webp" alt="mychess" width="200" height="200"><br>
+            <details>
+                Designer : Versace
+                Size     : XXL
+                Price    : $2150 (V.A.T inclusive)
+            </details>
          </div>
          <div>
-         <img src="./assets/myCloth.webp" alt="mychess" usemap="#useme" width="200" height="200">
+         <img src="./assets/myCloth.webp" alt="mychess" width="200" height="200"><br>
+         <details>
+            Designer : Versace
+            Size     : XXL
+            Price    : $2150 (V.A.T inclusive)
+        </details>
          </div>
          <div>
-         <img src="./assets/myDress.webp" alt="mychess" usemap="#useme" width="200" height="200">
+         <img src="./assets/myDress.webp" alt="mychess" width="200" height="200"><br>
+         <details>
+            Designer : Versace
+            Size     : XXL
+            Price    : $2150 (V.A.T inclusive)
+        </details>
          </div>
     </div>
     <map name="useme">
@@ -92,7 +113,7 @@
         </tr>
     </table>
     <hr>
-    <div id="#bottom">
+    <div>
     <ul onclick="that()">
         <h4 id="#bottom">About Us!</h4>
         <li><a href="//www.instagram.com/jeftey_edits/" target="_blank">Instagram</a></li>
