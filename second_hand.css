@@ -14,8 +14,47 @@ body{
     background-color: red;
     border-radius: 9px;
     border: 4px solid gold;
-    font-size: 1vw;
+    font-size: 3vw;
 }
 a{
     color: green;
+}
+.explain{
+    color: black;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid blue;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333333;
+    border-radius: 12px;
+}
+li {
+    float: center;
+}
+li a:hover {
+    background-color: black;
+}
+.us {
+    border-radius: 12%;
+    border: #333333;
+}
+li a {
+    color: #ffff;
+    display: list-item;
+    text-decoration: none;
+    padding: 16px;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    color: gold;
+}
+img{
+    border-radius: 9px;
+    border: 2px solid blue;
 }

@@ -91,10 +91,10 @@ li a{
 li a:hover{
     background-color: black;
 }
-p{
+/* p{
     text-align: center;
     color: brown;
-}
+} */
 li a:active{
     color: goldenrod;
 }
@@ -143,8 +143,26 @@ iframe{
     float: right;
 }
 header{
-    /* background-image: url(./assets/myCollection.jpeg); */
+    background-image: url(./assets/myCollection.jpeg);
 }
 .list{
     font-size: 1vw;
+}
+.alldesigners{
+    margin: 0px;
+    padding: 5px;
+    background-color: lightblue;
+    border-radius: 12px;
+}
+.alldesigners >h1, .designer{
+    margin: 10px;
+    padding: 5px;
+}
+.designer{
+    background-color: white;
+    border-radius: 9px;
+}
+.alldesigners >h2 ,p{
+    margin: 4px;
+    font-size: 90%;
 }
