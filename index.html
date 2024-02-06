@@ -18,10 +18,13 @@
     </div>
     <hr>
     <p id="#dislogan">Instant Shopping $ Shipping.</p>
-    <button onclick="mySlogan()">Slogan.</button>
+    
     <script>
         function mySlogan(){
             document.getElementById("#dislogan").innerHTML=("WELCOME BACK AGAIN!")
+            document.getElementById("#dislogan").style.backgroundColor ="yellow";
+            document.getElementById("#dislogan").style.borderRadius="9px";
+            alert("BYE!BYE!👋")
         }
     </script>
     <script>
@@ -29,9 +32,7 @@
             alert ("Proceed!");
         }
     </script><br>
-    <iframe src="demo_iframe.html" name="iframe_a" title="iframe example"></iframe><br>
-    <p><a href="http://127.0.0.1:5500/demo_iframe.html" target="iframe_a">W3Schools.com</a></p>
-
+    <iframe src="demo_iframe.html" name="iframe_a" title="iframe example"></iframe>
     <!-- RE-fomart -->
     <div class="clothes">
          <div>
@@ -187,5 +188,6 @@
             alert("Reach Out?");
         }
     </script>
+<button onclick="mySlogan()" class="log">Log Out!</button>
 </body>
 </html>

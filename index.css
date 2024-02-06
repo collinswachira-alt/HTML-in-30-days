@@ -132,3 +132,11 @@ iframe{
     width: 570px;
     float: left;
 }
+.log{
+    background-color: aqua;
+    border-color: red;
+    border-radius: 3px;
+    color: gold;
+    text-align: right;
+    float: ;
+}
