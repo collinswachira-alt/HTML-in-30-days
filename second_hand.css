@@ -1,0 +1,21 @@
+body{
+    background-image: url(./assets/secnd.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    color: gold;
+    font-size: 30px;
+    text-align: center;
+}
+.head{
+    color: blue;
+    text-align: center;
+    background-color: red;
+    border-radius: 9px;
+    border: 4px solid gold;
+    font-size: 1vw;
+}
+a{
+    color: green;
+}
