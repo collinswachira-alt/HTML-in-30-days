@@ -38,7 +38,7 @@
 <hr>
 <form action="details.php">
     <label for="lang">Select Lang!</label>
-    <select name="lang" id="lang" multiple>
+    <select name="lang" id="lang">
         <option value="noLang">None</option>
         <option value="lang1">HTML</option>
         <option value="lang2">JS</option>
@@ -52,5 +52,19 @@
     <br>
     <input type="submit">
 </form>
+<hr>
+<form action="details.php">
+    <input list="languages" name="languages">
+    <datalist id="languages">
+        <option value="php">
+        <option value="js">
+        <option value="html">
+        <option value="java">
+        <option value="c++">
+        <option value="python">
+    </datalist>
+    <input type="submit">
+</form>
+<hr>
 </body>
 </html>
