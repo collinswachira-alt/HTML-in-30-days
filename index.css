@@ -157,12 +157,20 @@ header{
 .alldesigners >h1, .designer{
     margin: 10px;
     padding: 5px;
+
 }
 .designer{
-    background-color: white;
+    background-color: blue;
     border-radius: 9px;
 }
 .alldesigners >h2 ,p{
     margin: 4px;
     font-size: 90%;
+    color: gold;
+}
+.alldesigners >h1 {
+    color: blue;
+}
+.designer >h2{
+    color: goldenrod;
 }
