@@ -4,67 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-<form action="details.php" target="_blank" method="get">
-    <fieldset>
-        <legend>Cedentials!</legend>
-    <label for="fname">First Name!</label><br>
-    <input type="text" id="fname" name="fname" value="Collins"><br>
-    <label for="lname">Last Name!</label><br>
-    <input type="text" id="lname" name="lname" value="Wachira"><br>
-    <input type="submit" value="Submit">
-    </fieldset>
-</form>
-<hr>
-<form action="details.php">
-    <input type="radio" id="html" name="fav_language" value="html">
-    <label for="html">HTML</label><br>
-    <input type="radio" id="js" name="fav_language" value="js">
-    <label for="js">JS</label><br>
-    <input type="radio" id="css" name="fav_language" value="css">
-    <label for="css">CSS</label><br>
-</form>
-<hr>
-<form action="details.php">
-    <input type="checkbox" id="lang1" name="C.Language" value="html">
-    <label for="lang1">HTML</label><br>
-    <input type="checkbox" id="lang2" name="C.Language" value="js">
-    <label for="lang2">JS</label><br>
-    <input type="checkbox" id="lang3" name="C.Language" value="css">
-    <label for="lang3">CSS</label><br>
-</form>
-<hr>
-<form action="details.php">
-    <label for="lang">Select Lang!</label>
-    <select name="lang" id="lang">
-        <option value="noLang">None</option>
-        <option value="lang1">HTML</option>
-        <option value="lang2">JS</option>
-        <option value="lang3">CSS</option>
-        <option value="lang4">PHP</option>
-    </select>
-</form>
-<hr>
-<form action="details.php">
-    <textarea name="Description" id="descrip" cols="30" rows="10"></textarea>
-    <br>
-    <input type="submit">
-</form>
-<hr>
-<form action="details.php">
-    <input list="languages" name="languages">
-    <datalist id="languages">
-        <option value="php">
-        <option value="js">
-        <option value="html">
-        <option value="java">
-        <option value="c++">
-        <option value="python">
-    </datalist>
-    <input type="submit">
-</form>
-<hr>
+    <form action="data.php" method="post" target="_blank">
+        <fieldset>
+            <legend>Personal info.</legend>
+        <label for="fname">First name.</label><br>
+        <input type="text" id="fname"><br>
+        <label for="lname">Last Name.</label><br>
+        <input type="text" id="lname"><br>
+        <input type="hidden" id="customerID" name="customerID">
+        <label for="pwd">Password.</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="reset" value="Default">
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <form action="data.php" method="post" target="_blank">
+        <input type="radio" id="gucci" name="favdesigner" value="Gucci">
+        <label for="gucci">Gucci</label><br>
+        <input type="radio" id="versace" name="favdesigner" value="versace">
+        <label for="versace">Versace</label><br>
+        <input type="radio" id="balenciaga" name="favdesigner" value="Balenciaga">
+        <label for="balenciaga">Balenciaga</label>
+    </form>
+    <form action="data.php" method="post" target="_blank">
+        <input type="checkbox" id="des1" name="favdesigner" value="Gucci">
+        <label for="des1">Gucci</label><br>
+        <input type="checkbox" id="des2" name="favdesigner" value="Balenciaga">
+        <label for="des2">Balenciaga</label><br>
+        <input type="checkbox" id="des3" name="favdesigner" value="Versace">
+        <label for="des3">Versace</label><br>
+        <input type="submit">
+    </form>
+    <form action="data.php">
+        <label for="des">Select a designer.</label>
+        <select name="designers" id="des" size="2" multiple>
+        <option value="Balenciaga">Balenciaga</option>
+        <option value="Versace" selected>Versace</option>
+        <option value="Gucci">Gucci</option>
+        <option value="L.V">Louis Vuitton</option>
+        </select>
+        <input type="submit" onclick="alert('Submit?')">
+    </form>
+    <form action="data.php">
+        <input list="designers" name="designers">
+        <datalist id="designers">
+            <option value="Martens">Martens</option>
+            <option value="Gucci">Gucci</option>
+            <option value="Versace">Versace</option>
+            <option value="Balenciaga">Balenciaga</option>
+        </datalist>
+        <input type="submit">
+    </form>
+    <form action="data.php">
+        <label for="myfile">Select A File.</label>
+        <input type="file" id="myfile"><br>
+        <input type="submit"><br>
+    </form>
 </body>
 </html>

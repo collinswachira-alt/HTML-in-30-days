@@ -174,3 +174,7 @@ header{
 .designer >h2{
     color: goldenrod;
 }
+.search{
+    color: aqua;
+    align-items: center;
+}
