@@ -2,6 +2,7 @@ body{
     background-image:url(./assets/store.jpeg) ;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .header{
     color: gold;
@@ -12,6 +13,7 @@ body{
     background-repeat: repeat;
     border-color: gold;
     font-size: 1vw;
+    background-attachment: fixed;
 }
 a{
     color: red;
@@ -176,5 +178,6 @@ header{
 }
 .search{
     color: aqua;
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
