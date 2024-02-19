@@ -46,3 +46,9 @@
     border-radius: 5px;
     color: white;
 }
+.reset:hover{
+    background-color: grey;
+}
+.submit:hover{
+    background-color: green;
+}
