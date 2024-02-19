@@ -4,65 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <form action="data.php" method="post" target="_blank" id="redentials">
-        <fieldset>
-            <legend>Personal info.</legend>
-        <label for="email">First name.</label><br>
-        <input type="email" id="email" placeholder="fashionhub@clothing.com" required><br>
-        <label for="tel">Phone Number.</label><br>
-        <input type="tel" id="tel" placeholder="+254 115661943" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{4}" required><br>
-        <input type="hidden" id="customerID" name="customerID">
-        <label for="pwd">Password.</label><br>
-        <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
-        <input type="reset" value="Default">
-        <input type="submit" value="Submit">
-        </fieldset>
-    </form>
-    <form action="data.php" method="post" target="_blank">
-        <input type="radio" id="gucci" name="favdesigner" value="Gucci">
-        <label for="gucci">Gucci</label><br>
-        <input type="radio" id="versace" name="favdesigner" value="versace">
-        <label for="versace">Versace</label><br>
-        <input type="radio" id="balenciaga" name="favdesigner" value="Balenciaga">
-        <label for="balenciaga">Balenciaga</label>
-    </form>
-    <form action="data.php" method="post" target="_blank">
-        <input type="checkbox" id="des1" name="favdesigner" value="Gucci">
-        <label for="des1">Gucci</label><br>
-        <input type="checkbox" id="des2" name="favdesigner" value="Balenciaga">
-        <label for="des2">Balenciaga</label><br>
-        <input type="checkbox" id="des3" name="favdesigner" value="Versace">
-        <label for="des3">Versace</label><br>
-        <input type="submit">
-    </form>
+    <div class="form">
     <form action="data.php">
-        <label for="des">Select a designer.</label>
-        <select name="designers" id="des" size="2" multiple>
-        <option value="Balenciaga">Balenciaga</option>
-        <option value="Versace" selected>Versace</option>
-        <option value="Gucci">Gucci</option>
-        <option value="L.V">Louis Vuitton</option>
-        </select>
-        <input type="submit" onclick="alert('Submit?')">
+        <p class="det">Personal Details.</p>
+        <label for="salutation">Salutation</label>
+        <select name="salutation" id="salutation">
+            <option value="sir">Sir</option>
+            <option value="madam">Madam</option>
+            <option value="bisexual">Unsaid.</option>
+        </select><br><br>
+        <label for="fname">First Name.</label><br>
+        <input type="text" name="fname" id="fname" size="40"><br><br>
+        <label for="lname">Last Name</label><br><br>
+        <input type="text" name="lname" id="lname" size="40"><br><br>
+        <label for="date">Date of Birth</label>
+        <input type="date" name="dob" id="date"><br><br>
+        <label for="address">Address</label><br>
+        <textarea name="address" id="address" cols="30" rows="10" class="address"></textarea><br><br>
+        <input type="submit" value="Submit"  class="submit">
     </form>
-    <form action="data.php">
-        <input list="designers" name="designers">
-        <datalist id="designers">
-            <option value="Martens">Martens</option>
-            <option value="Gucci">Gucci</option>
-            <option value="Versace">Versace</option>
-            <option value="Balenciaga">Balenciaga</option>
-        </datalist>
-        <input type="submit">
-    </form>
-    <form action="data.php">
-        <label for="myfile">Select A File.</label>
-        <input type="file" id="myfile" multiple><br>
-        <input type="submit"><br>
-    </form>
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="last name" form="Credentials" required>
+</div>
 </body>
 </html>
