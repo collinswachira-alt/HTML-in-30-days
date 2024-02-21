@@ -41,37 +41,7 @@ address{
     text-align: right;
     
 }
-table{
-    height: auto;
-    background-color: yellowgreen;
-    border-radius: 12px;
-}
-th ,td{
-    border-radius: 10px;
-    border-style: double;
-}
-th{
-    color: brown;
-    text-align: left;
-}
-tr{
-    height: 60;
-    border-bottom: 1px solid red;
-}
-tr:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4)
-}
-th:nth-child(even) , td:nth-child(even){
-    background-color: rgba(150, 212, 212, 0.4)
-}
-caption{
-    color: brown;
-    text-decoration: underline;
-    font-weight: bold;
-}
-tr :hover{
-    background-color: rgba(21, 43, 23, 9.3);
-}
+
 ul{
     list-style-type: none;
     margin: 0px;
@@ -136,14 +106,6 @@ iframe{
     width: 570px;
     float: left;
 }
-.log{
-    background-color: aqua;
-    border-color: red;
-    border-radius: 3px;
-    color: gold;
-    text-align: right;
-    float: right;
-}
 header{
     background-image: url(./assets/myCollection.jpeg);
 }
@@ -180,4 +142,33 @@ header{
     color: aqua;
     display: flex;
     justify-content: center;
+}
+table, th, td{
+    border: 3px solid gold;
+        border-radius: 5px;
+}
+table{
+    width: 50%;
+    background-color: black;
+    /* justify-content: center; */
+    border: none;
+
+}
+th{
+    text-align: center;
+    background-color: white;
+}
+td{
+    text-align: left;
+    color: red;
+}
+.hover:hover{
+    background-color: white;
+    text-transform: capitalize;
+}
+#units{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
