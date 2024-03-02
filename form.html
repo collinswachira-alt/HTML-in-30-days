@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form.</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div class="form">
-    <form action="data.php">
+<div class="form">
+    <form method="post">
         <p class="det">Personal Details.</p>
         <label for="salutation">Salutation</label>
-        <select name="salutation" id="salutation">
+        <select name="salutation" class="space" id="salutation">
             <option value="sir">Sir</option>
             <option value="madam">Madam</option>
-            <option value="bisexual" selected>Unsaid.</option>
+            <option value="bisexual" selected>Undefined</option>
         </select><br><br>
-        <label for="email">E-mail Input.</label><br>
-        <input type="email" name="email" id="email" size="40" placeholder="fashionhub@clothing.com" required><br><br>
-        <label for="tel">Phone Number.</label><br><br>
-        <input type="tel" name="tel" id="tel" size="40" placeholder="+254 11-566-1943" required><br><br>
+        <label for="email">E-mail.</label>
+        <input type="email" name="email" class="space" id="email" size="40" placeholder="fashionhub@clothing.com" required><br><br>
+        <label for="tel">Phone Number.</label><br>
+        <input type="tel" name="tel" id="tel" class="space" size="40" placeholder="+254 11-566-1943" required><br><br>
         <label for="date">Date of Birth</label>
-        <input type="date" name="dob" id="date" required><br><br>
+        <input type="date" name="dob" class="space" id="date" required><br><br>
         <label for="address">Address</label><br>
-        <textarea name="address" id="address" cols="30" rows="10" class="address" placeholder="12-1500 Kerugoya."></textarea><br><br>
-        <input type="reset" value="Clear Form." class="reset"><br>
-        <input type="submit" value="Submit."  class="submit">
+        <textarea name="address" id="address"  class="address" cols="30" rows="10" placeholder="12-1500 Kerugoya."></textarea><br><br>
+        <button class="submit" inputmode="Submit"><a href="main.html">Submit.</a></button>
     </form>
 </div>
 </body>

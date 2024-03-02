@@ -9,11 +9,14 @@
     border-radius: 15px;
     color: rgb(143, 140, 140);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 86%;
+    justify-content: center;
 }
 
 .submit {
     display: flex;
-    height: 30px;
+    position: relative;
+    height: 2rem;
     width: 309px;
     text-align: center;
     justify-content: center;
@@ -21,8 +24,10 @@
     color: white;
     background-color: #0e71ea;
     box-shadow: none;
-    border: none;
     border-radius: 5px;
+    box-shadow: none;
+    border-color: green;
+    text-decoration: none;
 }
 
 .det {
@@ -30,34 +35,32 @@
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding: 0.1rem 0;
 }
 
 .address {
     width: 300px;
-}
-.reset {
-    display: flex;
-    height: 30px;
-    width: 309px;
-    text-align: center;
-    justify-content: center;
-    background-color: #662020b1;
-    color: white;
-    border: none;
-    box-shadow: none;
+    border: 1px solid grey;
     border-radius: 5px;
-}
-.reset:hover{
-    background-color: grey;
-    animation: 3s;
-    text-transform: uppercase;
 }
 .submit:hover{
     background-color: green;
     text-transform: uppercase;
+    border-color: blue;
 }
-.submit .reset{
-    box-shadow: none;
-    border: none;
+.space{
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: gray;
+}
+.form{animation: fadeIn 1s infinite;}
+@keyframes fadein {
+   0% {opacity: 0;}
+    50% {opacity: 5;}
+    100% {opacity: 0;}
 }

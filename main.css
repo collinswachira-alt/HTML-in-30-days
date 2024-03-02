@@ -80,6 +80,9 @@ h4{
 .clothes{
     display: flex;
     width: 40%;
+    /* justify-content: center; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .black{
     color: goldenrod;
@@ -150,9 +153,12 @@ table, th, td{
 table{
     width: 50%;
     background-color: black;
-    /* justify-content: center; */
+    justify-content: center;
     border: none;
-
+    /* display: flex; */
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
 }
 th{
     text-align: center;
