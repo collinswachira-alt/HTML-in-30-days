@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    background-image: url(assets/myCollection.jpeg);
+    opacity: 80%;
+    align-items: center;
+    align-self: center;
+    height: 110px;
+    position: relative;
+    border-color: #daa520;
+    border-radius: 12px;
+}
+.txt{
+    color:red;
+    text-align: center;
+    margin: auto;
+    border-color: gold;
+    font-size: 1vw;
+    background-attachment: fixed;
+    opacity: 100%;
+    text-decoration: solid;
+    font-weight: bold;
+    position: relative;
+    margin-top: 1px;
+}
+.me{
+    padding-top: 2%;
+}

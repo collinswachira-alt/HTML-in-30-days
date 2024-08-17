@@ -1,66 +1,182 @@
-.form {
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #243b55;
+}
+
+.login-form {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 400px;
+    padding: 40px;
     transform: translate(-50%, -50%);
-    width: 30%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 2rem;
-    border-radius: 15px;
-    color: rgb(143, 140, 140);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    height: 86%;
-    justify-content: center;
-
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
 }
-.submit {
-    display: flex;
+
+.login-form h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-form .inputs {
     position: relative;
-    height: 2rem;
-    width: 309px;
-    text-align: center;
-    justify-content: center;
-    background-color: grey;
-    color: white;
-    background-color: #0e71ea;
-    box-shadow: none;
-    border-radius: 5px;
-    box-shadow: none;
-    border-color: green;
+}
+
+.login-form .inputs input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-form .inputs label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 5s;
+}
+
+.login-form .inputs input:focus~label
+.login-form .inputs input:valid~label{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.login-form form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
     text-decoration: none;
-}
-
-.det {
-    color: #0e71ea;
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding: 0.1rem 0;
-}
-
-.address {
-    width: 300px;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-.submit:hover{
-    background-color: green;
     text-transform: uppercase;
-    border-color: blue;
+    overflow: hidden;
+    transition: 5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
 }
-.space{
-    border: 1px solid grey;
+
+.login-form a:hover {
+    background: #03e9f4;
+    color: #fff;
     border-radius: 5px;
-    color: gray;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
 }
-.form{animation: fadeIn 1s infinite;}
-@keyframes fadein {
-   0% {opacity: 0;}
-    50% {opacity: 5;}
-    100% {opacity: 0;}
+
+.login-form a span {
+    position: absolute;
+    display: block;
 }
+
+.login-form a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transform);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-form a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transform);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%
+    }
+}
+
+.login-form a span:nth-child(3) {
+    bottom: 0;
+    right: -100;
+    height: 2px;
+    width: 100%
+    background: linear-gradient(270deg,transform)
+    animation: linear-gradient(270deg,transform)
+    animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transform);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.submit {
+    text-align: center;
+    align-items: center;
+    justify-content: center;

@@ -179,3 +179,8 @@ td{
     border: none;
     border-radius: 5px;
 }
+.scroll{
+    color: red;
+    width: 50%; 
+    text-align: center;  
+}
